@@ -18,7 +18,7 @@ config = {
         "purchases": "📦 Ваши покупки (0) / Sizning xaridlaringiz (0)",
         "reviews": "⭐️ Я купил товар, очень качественный! / Men mahsulot sotib oldim, juda sifatli!",
         "operator": "@Warrenbufett1",
-        "raymond": "@raymond_20",
+        "raymond": "@ltc_baby",
         "ltc_wallet": "ltc1q6vky28tchxtzf3tydgtr97hqpgdxdcjmfc0une",
         "card": "6373 7473 9373 3636"
     }
