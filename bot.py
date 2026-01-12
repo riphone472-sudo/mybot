@@ -18,8 +18,8 @@ config = {
         "purchases": "📦 Ваши покупки (0) / Sizning xaridlaringiz (0)",
         "reviews": "⭐️ Я купил товар, очень качественный! / Men mahsulot sotib oldim, juda sifatli!",
         "operator": "@Warrenbufett1",
-        "raymond": "@ltc_baby",
-        "ltc_wallet": "ltc1q6vky28tchxtzf3tydgtr97hqpgdxdcjmfc0une",
+        "LTC BABY": "@ltc_baby",
+        "ltc_wallet": "ltc1qzu266xuw83gf8hyxvveqr5m95ge55hvhmenze6",
         "card": "6373 7473 9373 3636"
     }
 }
@@ -72,7 +72,7 @@ async def show_cities(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if row:
         buttons.append(row)
 
-    buttons.append([InlineKeyboardButton("Raymond", url=f"https://t.me/{config['texts']['raymond'].replace('@','')}")])
+    buttons.append([InlineKeyboardButton("LTC BABY", url=f"https://t.me/{config['texts']['LTC BABY'].replace('@','')}")])
     buttons.append([InlineKeyboardButton("🔙 Главное меню", callback_data="main_menu")])
 
     if update.message:
@@ -87,7 +87,7 @@ async def city_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     city = query.data.replace("city_", "")
 
     buttons = [
-        [InlineKeyboardButton("СК Альфа-пвп кристалл(⭐️) 0.35g 3600₽", callback_data=f"product_{city}")],
+        [InlineKeyboardButton("СК LIMON (🍋) 0.5g 3690₽", callback_data=f"product_{city}")],
         [InlineKeyboardButton("🔙 Главное меню", callback_data="main_menu")]
     ]
 
@@ -111,7 +111,7 @@ async def product_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.message.reply_text(
         f"Вы выбрали товар / Siz mahsulotni tanladingiz:\n\n"
         f"Город / Shahar: {city}\n\n"
-        f"Товар / Mahsulot: СК Альфа-пвп кристалл (⭐️) 0.35g 3600₽\n\n"
+        f"Товар / Mahsulot: СК LIMON (🍋) 0.5g 3690₽\n\n"
         f"Выберете район / Tumanni tanlang:",
         reply_markup=InlineKeyboardMarkup(buttons)
     )
@@ -123,7 +123,7 @@ async def region_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     _, city, region = query.data.split("_")
 
     buttons = [
-        [InlineKeyboardButton("LTC *к оплате*/to'lov uchun: 0.367815", callback_data=f"pay_{city}_{region}")],
+        [InlineKeyboardButton("LTC *к оплате*/to'lov uchun: 0.597815", callback_data=f"pay_{city}_{region}")],
         [InlineKeyboardButton("🔙 Главное меню", callback_data="main_menu")]
     ]
 
@@ -131,7 +131,7 @@ async def region_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"Вы выбрали район / Siz mahsulotni tanladingiz: {region}\n\n"
         f"Город / Shahar: {city}\n"
         f"Район / Tuman: {region}\n\n"
-        f"Товар / Mahsulot: СК Альфа-пвп кристалл (⭐️) 0.35g 3600₽  \n\n"
+        f"Товар / Mahsulot: СК LIMON (🍋) 0.5g 3690₽  \n\n"
         f"Ваш Баланс / Sizning Balansingiz: 0 ₽ \n\n"
         f"Выбор способа оплаты / To'lov usulini tanlash:",
         reply_markup=InlineKeyboardMarkup(buttons)
@@ -144,7 +144,7 @@ async def payment_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     _, city, region = query.data.split("_")
 
     buttons = [
-        [InlineKeyboardButton("Raymond", url=f"https://t.me/{config['texts']['raymond'].replace('@','')}")],
+        [InlineKeyboardButton("LTC BABY", url=f"https://t.me/{config['texts']['LTC BABY'].replace('@','')}")],
         [InlineKeyboardButton("🔙 Главное меню", callback_data="main_menu")]
     ]
 
@@ -158,8 +158,8 @@ async def payment_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "To'lov avtomatik ravishda 5 daqiqa ichida amalga oshiriladi\n\n"
         "BALANSNI YANA TO'LDIRISH UCHUN BOT BERADIGAN YANGI HAMYONDAN FOYDALANING\n\n"
         "➖➖➖➖➖➖➖➖ \n"
-        "💎 TO PAY: 0.367815 LTC\n\n"
-        "🎁 Product: СК Альфа-пвп кристалл (⭐️) 0.35g 3600₽\n\n"
+        "💎 TO PAY: 0.597815 LTC\n\n"
+        "🎁 Product: СК LIMON (🍋) 0.5g 3690₽\n\n"
         f"🔦 Address: {city}-{city}-{region} \n"
         "➖➖➖➖➖➖➖➖"
     )
@@ -178,14 +178,14 @@ async def recharge_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
     buttons = [
-        [InlineKeyboardButton("Raymond", url=f"https://t.me/{config['texts']['raymond'].replace('@','')}")],
+        [InlineKeyboardButton("LTC BABY", url=f"https://t.me/{config['texts']['LTC BABY'].replace('@','')}")],
         [InlineKeyboardButton("🔙 Главное меню", callback_data="main_menu")]
     ]
 
     text = (
         "Способ оплаты: LTC\n\n"
         "Оплатите желаемую сумму на кошелек\n\n"
-        "ltc1q6vky28tchxtzf3tydgtr97hqpgdxdcjmfc0une\n\n"
+        "ltc1qzu266xuw83gf8hyxvveqr5m95ge55hvhmenze6\n\n"
         "Оплата зачислится автоматически в течении 5 минут\n\n"
         "ЧТО-БЫ ПОПОЛНИТЬ БАЛАНС ЕЩЕ РАЗ, ИСПОЛЬЗУЙТЕ НОВЫЙ LTC КОШЕЛЕК КОТОРЫЙ ВЫДАЕТ БОТ\n\n"
         "НЕ ПОПОЛНЯЙТЕ ЭТОТ АДРЕС ДВАЖДЫ\n"
