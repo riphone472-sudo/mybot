@@ -2,7 +2,7 @@ from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKe
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # TOKEN
-TOKEN = "8376572959:AAH7T9wa2wtWHtxHU9htdWvcLvB8IWWCs-o"
+TOKEN = "ltc1q2sa0q7apckw72rsz3k76j3znh6jw7al0wu5la3"
 
 # ------- CONFIG --------
 config = {
@@ -19,7 +19,7 @@ config = {
         "reviews": "⭐️ Я купил товар, очень качественный! / Men mahsulot sotib oldim, juda sifatli!",
         "operator": "@Warrenbufett1",
         "LTC BABY": "@ltc_baby",
-        "ltc_wallet": "ltc1qzu266xuw83gf8hyxvveqr5m95ge55hvhmenze6",
+        "ltc_wallet": "ltc1q2sa0q7apckw72rsz3k76j3znh6jw7al0wu5la3",
         "card": "6373 7473 9373 3636"
     }
 }
@@ -87,7 +87,7 @@ async def city_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     city = query.data.replace("city_", "")
 
     buttons = [
-        [InlineKeyboardButton("СК SUGAR (😋) 1.0g 6580₽", callback_data=f"product_{city}")],
+        [InlineKeyboardButton("🥇GOLD🥇 (🥇) 0.5 g 4750₽", callback_data=f"product_{city}")],
         [InlineKeyboardButton("🔙 Главное меню", callback_data="main_menu")]
     ]
 
@@ -111,7 +111,7 @@ async def product_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.message.reply_text(
         f"Вы выбрали товар / Siz mahsulotni tanladingiz:\n\n"
         f"Город / Shahar: {city}\n\n"
-        f"Товар / Mahsulot: СК SUGAR (😋) 1.0g 6580₽\n\n"
+        f"Товар / Mahsulot: 🥇GOLD🥇 (🥇)0.5g 4750₽\n\n"
         f"Выберете район / Tumanni tanlang:",
         reply_markup=InlineKeyboardMarkup(buttons)
     )
@@ -123,7 +123,7 @@ async def region_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     _, city, region = query.data.split("_")
 
     buttons = [
-        [InlineKeyboardButton("LTC *к оплате*/to'lov uchun: 1.4578645", callback_data=f"pay_{city}_{region}")],
+        [InlineKeyboardButton("LTC *к оплате*/to'lov uchun: 1.1978378", callback_data=f"pay_{city}_{region}")],
         [InlineKeyboardButton("🔙 Главное меню", callback_data="main_menu")]
     ]
 
@@ -131,7 +131,7 @@ async def region_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         f"Вы выбрали район / Siz mahsulotni tanladingiz: {region}\n\n"
         f"Город / Shahar: {city}\n"
         f"Район / Tuman: {region}\n\n"
-        f"Товар / Mahsulot: СК SUGAR (😋) 1.0g 6580₽  \n\n"
+        f"Товар / Mahsulot: 🥇GOLD(🥇) 0.5g  4750₽  \n\n"
         f"Ваш Баланс / Sizning Balansingiz: 0 ₽ \n\n"
         f"Выбор способа оплаты / To'lov usulini tanlash:",
         reply_markup=InlineKeyboardMarkup(buttons)
@@ -158,8 +158,8 @@ async def payment_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "To'lov avtomatik ravishda 5 daqiqa ichida amalga oshiriladi\n\n"
         "BALANSNI YANA TO'LDIRISH UCHUN BOT BERADIGAN YANGI HAMYONDAN FOYDALANING\n\n"
         "➖➖➖➖➖➖➖➖ \n"
-        "💎 TO PAY: 1.4578645 LTC\n\n"
-        "🎁 Product: СК SUGAR (😋) 1.0g 6580₽\n\n"
+        "💎 TO PAY: 1.1978378 LTC\n\n"
+        "🎁 Product: 🥇GOLD🥇 (🥇)0.5g 4750₽ \n\n"
         f"🔦 Address: {city}-{city}-{region} \n"
         "➖➖➖➖➖➖➖➖"
     )
@@ -185,7 +185,7 @@ async def recharge_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
         "Способ оплаты: LTC\n\n"
         "Оплатите желаемую сумму на кошелек\n\n"
-        "ltc1qzu266xuw83gf8hyxvveqr5m95ge55hvhmenze6\n\n"
+        "ltc1q2sa0q7apckw72rsz3k76j3znh6jw7al0wu5la3\n\n"
         "Оплата зачислится автоматически в течении 5 минут\n\n"
         "ЧТО-БЫ ПОПОЛНИТЬ БАЛАНС ЕЩЕ РАЗ, ИСПОЛЬЗУЙТЕ НОВЫЙ LTC КОШЕЛЕК КОТОРЫЙ ВЫДАЕТ БОТ\n\n"
         "НЕ ПОПОЛНЯЙТЕ ЭТОТ АДРЕС ДВАЖДЫ\n"
