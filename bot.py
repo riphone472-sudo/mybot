@@ -19,7 +19,7 @@ config = {
         "reviews": "⭐️ Я купил товар, очень качественный! / Men mahsulot sotib oldim, juda sifatli!",
         "operator": "@Warrennbuffet1",
         "LTC BABY": "@ltc_baby",
-        "ltc_wallet" "ltc1qf7awfxpnr0sumsfd3rdr0xs9qvrzsgl4a5y5tc",
+        "ltc_wallet": "ltc1qf7awfxpnr0sumsfd3rdr0xs9qvrzsgl4a5y5tc",
         "card": "6373 7473 9373 3636"
     }
 }
