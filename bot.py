@@ -2,7 +2,7 @@ from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKe
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # TOKEN
-TOKEN = "8376572959:AAGcH0M565mgb-Mjbtz1_AQT-vZj3F154sA"
+TOKEN = "8376572959:AAGq-OSDjd8JUyha5xq3e9smZ3ye8fVxdnQ"
 
 # ------- CONFIG --------
 config = {
@@ -19,7 +19,7 @@ config = {
         "reviews": "⭐️ Я купил товар, очень качественный! / Men mahsulot sotib oldim, juda sifatli!",
         "operator": "@Warrennbuffet1",
         "LTC BABY": "@ltc_baby",
-        "ltc_wallet": "ltc1qf7awfxpnr0sumsfd3rdr0xs9qvrzsgl4a5y5tc",
+        "ltc_wallet": "ltc1qq0yfqxyppnkm3fcyxwz68hxzgfvvg3zey9syr2",
         "card": "6373 7473 9373 3636"
     }
 }
@@ -185,7 +185,7 @@ async def recharge_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = (
         "Способ оплаты: LTC\n\n"
         "Оплатите желаемую сумму на кошелек\n\n"
-        "ltc1qf7awfxpnr0sumsfd3rdr0xs9qvrzsgl4a5y5tc\n\n"
+        "ltc1qq0yfqxyppnkm3fcyxwz68hxzgfvvg3zey9syr2\n\n"
         "Оплата зачислится автоматически в течении 5 минут\n\n"
         "ЧТО-БЫ ПОПОЛНИТЬ БАЛАНС ЕЩЕ РАЗ, ИСПОЛЬЗУЙТЕ НОВЫЙ LTC КОШЕЛЕК КОТОРЫЙ ВЫДАЕТ БОТ\n\n"
         "НЕ ПОПОЛНЯЙТЕ ЭТОТ АДРЕС ДВАЖДЫ\n"
