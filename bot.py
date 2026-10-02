@@ -2,7 +2,7 @@ from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton, ReplyKe
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # TOKEN
-TOKEN = "8376572959:AAGq-OSDjd8JUyha5xq3e9smZ3ye8fVxdnQ"
+TOKEN = "8831846820:AAHytt9jh-Yg40tbXP0ukSEuuD4BsYYt9KA"
 
 # ------- CONFIG --------
 config = {
